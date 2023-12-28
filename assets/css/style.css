@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "TrainOne";
+    src: url("../fonts/TrainOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url("../fonts/Caveat-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat-Light";
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.7);
+    background-blend-mode: color;
+    color: whitesmoke;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-family: "TrainOne";
+}
+
+h2 {
+    font-family: "Caveat-Regular";
+}
+
+article {
+    width: 30rem;
+    height: auto;
+    border-width: 1rem;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to top, 
+        purple, 
+        rgba(7, 7, 7, 0.3)
+      ) 3 100%;
+}
+
+form, div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 1rem;
+    background-color: rgba(249,249,259,0.3);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+input[type="submit"], button {
+    background-color: rgba(128, 0, 128, 0.9);
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(7, 7, 7, 0.7);
+    border-radius: 0.7rem;
+    color: aliceblue;
+}
+
+
+

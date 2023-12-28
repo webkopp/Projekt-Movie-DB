@@ -13,10 +13,10 @@ CSS3
 JavaScript
 
 GitHub Live-Vorschau
-Du findest eine Live Vorschau auf GitHub: 
+Du findest eine Live Vorschau auf GitHub: https://webkopp.github.io/Projekt-Movie-DB/
 
 GitHub-Repository
-Du findest das gesamte Projekt auf GitHub: 
+Du findest das gesamte Projekt auf GitHub: https://github.com/webkopp/Projekt-Movie-DB
 
 Aufgaben
 - In dieser Übung wirst du eine Movie Datenbank mithilfe von JavaScript erstellen, sortieren und filtern.

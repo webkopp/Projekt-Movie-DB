@@ -52,7 +52,7 @@ h2 {
 }
 
 article {
-    width: 50rem;
+    width: 100vw;
     height: auto;
     border-width: 1rem;
     border-style: solid;
@@ -68,8 +68,8 @@ form, div {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
-    padding-top: 1.5rem;
+    gap: 3rem;
+    margin: 0.5rem 5rem;
 }
 
 input[type="text"] {
@@ -85,27 +85,52 @@ input[type="submit"], button {
     color: whitesmoke;
     border: none;
     cursor: pointer;
+    width: 40%;
     padding: 1rem;
     border-radius: 0.3rem;
 }
 
 section {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     padding: 1rem;
     gap: 1rem;
+    width: 15rem;
+    height: 15rem;
     background-color: rgba(7, 7, 7, 0.7);
     border-radius: 0.7rem;
     color: whitesmoke;
+    border-width: 1rem;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        purple, 
+        rgba(7, 7, 7, 0.3)
+      ) 3 100%;
 
 }
 
 #movies {
-    width: 15rem;
-    height: 15rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgba(128, 0, 128, 0.1);
+    border-radius: 0.3rem;
+    border-width: 1rem;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        purple, 
+        rgba(7, 7, 7, 0.3)
+      ) 3 100%;
+}
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.7rem;
+    padding-top: 1rem;
 }

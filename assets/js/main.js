@@ -1014,3 +1014,20 @@ const movies = [
     ]
 ]
 
+let toHtml = document.querySelector("#movies")
+
+movies.forEach(moviesBox)
+
+function moviesBox(movie, index) {
+    let title = movie[0]
+    let year = movie[1]
+    let director = movie[2]
+    let length = movie[3]
+    let genre = movie[4]
+    let rating = movie[5]
+    console.log(title + rating)
+    toHtml.innerHTML += "<section>" + "<h3>" + title + "</h3>" + "<p>" + year + "</p>" + "<p>" + director + "</p>" + "<p>" + length + "</p>" + "<p>" + genre + "</p>" + "<p>" + rating + "</p>" + "</section>"
+}
+
+
+

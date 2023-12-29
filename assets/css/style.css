@@ -21,8 +21,8 @@
 }
 
 body {
-    width: 100vw;
-    height: auto;
+    width: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     background-color: rgba(7, 7, 7, 0.7);
     background-blend-mode: color;
     color: whitesmoke;
@@ -52,7 +52,7 @@ h2 {
 }
 
 article {
-    width: 30rem;
+    width: 50rem;
     height: auto;
     border-width: 1rem;
     border-style: solid;
@@ -89,14 +89,8 @@ input[type="submit"], button {
     border-radius: 0.3rem;
 }
 
-#movies {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 section {
-    width: 15rem;
-    height: 15rem;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -104,8 +98,14 @@ section {
     gap: 1rem;
     background-color: rgba(7, 7, 7, 0.7);
     border-radius: 0.7rem;
-    color: aliceblue;
+    color: whitesmoke;
+
 }
 
-
-
+#movies {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

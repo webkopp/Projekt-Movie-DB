@@ -1018,16 +1018,57 @@ let toHtml = document.querySelector("#movies")
 
 movies.forEach(moviesBox)
 
-function moviesBox(movie, index) {
+function moviesBox(movie, i) {
     let title = movie[0]
     let year = movie[1]
     let director = movie[2]
     let length = movie[3]
     let genre = movie[4]
     let rating = movie[5]
-    console.log(title + rating)
+    console.log(title + year + rating)
     toHtml.innerHTML += "<section>" + "<h3>" + title + "</h3>" + "<p>" + year + "</p>" + "<p>" + director + "</p>" + "<p>" + length + "</p>" + "<p>" + genre + "</p>" + "<p>" + rating + "</p>" + "</section>"
 }
 
+let titleSorting = document.querySelector("#titleSorting")
+titleSorting.addEventListener("click", function () {
+    moviesSorting = movies.sort()
+    toHtml.innerHTML = ""
+    moviesSorting.forEach(moviesBox)
+})
+
+let yearSorting = document.querySelector("#yearSorting")
+yearSorting.addEventListener("click", function () {
+    moviesSorting = movies.sort()
+    toHtml.innerHTML = ""
+    moviesSorting.forEach(moviesBox)
+})
+
+let yearRating = document.querySelector("#yearRating")
+yearRating.addEventListener("click", function () {
+    moviesSorting = movies.sort()
+    toHtml.innerHTML = ""
+    moviesSorting.forEach(moviesBox)
+})
+
+let genreAction = document.querySelector("#genAction")
+genreAction.addEventListener("click", function () {
+    moviesSorting = movies.sort()
+    toHtml.innerHTML = ""
+    moviesSorting.forEach(moviesBox)
+})
+
+let genreCrime = document.querySelector("#genCrime")
+genreCrime.addEventListener("click", function () {
+    moviesSorting = movies.sort()
+    toHtml.innerHTML = ""
+    moviesSorting.forEach(moviesBox)
+})
+
+let genreDrama = document.querySelector("#genDrama")
+genreDrama.addEventListener("click", function () {
+    moviesSorting = movies.sort()
+    toHtml.innerHTML = ""
+    moviesSorting.forEach(moviesBox)
+})
 
 

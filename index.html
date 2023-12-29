@@ -11,13 +11,13 @@
 <body>
     <header>
         <h1>Movies for you</h1>
-        <h2>The best Movie DB ever</h2>
+        <h2>Find the best Movies</h2>
     </header>
     <main>
         <article>
-            <form>
+            <form onsubmit="searchTrailer(); return false">
                 <input type="text" id="searchMovie" placeholder="Welcome ! Find your Movie.">
-                <input type="submit" value="SEARCH">
+                <input type="submit" value="SEARCH" required>
             </form>
             <div>
                 <button type="submit" id="titleSorting">Title Sorting</button>

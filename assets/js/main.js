@@ -1013,7 +1013,7 @@ const movies = [
         '8.3'
     ]
 ]
-
+// movies ausgeben
 let toHtml = document.querySelector("#movies")
 
 movies.forEach(moviesBox)
@@ -1029,6 +1029,21 @@ function moviesBox(movie, i) {
     toHtml.innerHTML += "<section>" + "<h3>" + title + "</h3>" + "<p>" + year + "</p>" + "<p>" + director + "</p>" + "<p>" + length + "</p>" + "<p>" + genre + "</p>" + "<p>" + rating + "</p>" + "</section>"
 }
 
+// movies suchen
+// let search = () => {
+//     let input = document.querySelector("#searchMovie").value
+// }
+
+function searchTrailer() {
+    let searching = document.querySelector("#searchMovie").value
+    console.log("" + searching)
+    let sorting = movies.includes(searching)
+    
+    toHtml.innerHTML = ""
+    sorting.forEach(moviesBox)
+}
+
+// movies sortieren
 let titleSorting = document.querySelector("#titleSorting")
 titleSorting.addEventListener("click", function () {
     moviesSorting = movies.sort()
@@ -1050,25 +1065,62 @@ yearRating.addEventListener("click", function () {
     moviesSorting.forEach(moviesBox)
 })
 
+// movies filtern
 let genreAction = document.querySelector("#genAction")
 genreAction.addEventListener("click", function () {
-    moviesSorting = movies.sort()
+    moviesFilter = movies.filter('Action')
     toHtml.innerHTML = ""
-    moviesSorting.forEach(moviesBox)
+    moviesFilter.forEach(moviesBox)
 })
 
 let genreCrime = document.querySelector("#genCrime")
 genreCrime.addEventListener("click", function () {
-    moviesSorting = movies.sort()
+    moviesFilter2 = movies.filter(Crime)
     toHtml.innerHTML = ""
-    moviesSorting.forEach(moviesBox)
+    moviesFilter2.forEach(moviesBox)
 })
 
 let genreDrama = document.querySelector("#genDrama")
 genreDrama.addEventListener("click", function () {
-    moviesSorting = movies.sort()
+    moviesFilter3 = movies.filter(Drama)
     toHtml.innerHTML = ""
-    moviesSorting.forEach(moviesBox)
+    moviesFilter3.forEach(moviesBox)
 })
 
-
+// // sortieren nach Jahr
+// const sortedByYear = movies.sort((a, b) => a.year - b.year)
+//     console.log("Sortiert nach Jahr:")
+//     sortedByYear.forEach(movie => console.log(movie.title))
+// // filtern nach Genre
+// const filteredByGenre = movies.filter(movie => movie.genre === "Drama")
+// console.log("Gefiltert nach Genre 'Drama':")
+// filteredByGenre.forEach(movie => console.log(movie.title))
+// // Genres mit Hilfe eines zweiten Arrays erstellen
+// const genres = ["Sci-Fi", "Drama", "Crime", "Action", "Fantasy"]; console.log("Genres:")
+// genres.forEach(genre => console.log(genre))
+// // Funktionen hinzufügen // Filtern nach Genre
+// const filterByGenre = (genre) => {   
+//     const filteredMovies = movies.filter(movie => movie.genre === genre)
+//     if (filteredMovies.length === 0) {console.log("Film not found")
+//    } else {     console.log(`Gefiltert nach Genre '${genre}':`)
+//         filteredMovies.forEach(movie => console.log(movie.title))
+//     } }
+// // Suche nach Jahr
+// const searchByYear = (year) => {   
+//     const filteredMovies = movies.filter(movie => movie.year === year)
+//     if (filteredMovies.length === 0) {     
+//         console.log("Film not found")
+//     } else {     
+//         console.log(`Gefiltert nach Jahr '${year}':`)
+//         filteredMovies.forEach(movie => console.log(movie.title))
+//     } }
+// // Film hinzufügen
+// const addMovie = (title, year, genre) => {   
+//     movies.push({ title, year, genre })
+//     console.log("Neuer Film hinzugefügt:")
+//     console.log({ title, year, genre })
+// }
+// // Beispielaufrufe der neuen Funktionen
+//  filterByGenre("Sci-Fi")
+//  searchByYear(1994)
+//  addMovie("The Avengers", 2012, "Action")

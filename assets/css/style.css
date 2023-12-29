@@ -53,13 +53,12 @@ h2 {
 
 article {
     width: 100vw;
-    height: auto;
     border-width: 1rem;
     border-style: solid;
     border-image: 
       linear-gradient(
         to top, 
-        purple, 
+        rgba(3, 89, 157, 0.9), 
         rgba(7, 7, 7, 0.3)
       ) 3 100%;
 }
@@ -75,13 +74,13 @@ form, div {
 input[type="text"] {
     width: 60%;
     padding: 1rem;
-    background-color: rgba(249,249,259,0.3);
+    background-color: rgba(249, 249, 249, 0.3);
     border: none;
     border-radius: 0.3rem;
 }
 
 input[type="submit"], button {
-    background-color: rgba(128, 0, 128, 0.9);
+    background-color: rgba(3, 89, 157, 0.9);
     color: whitesmoke;
     border: none;
     cursor: pointer;
@@ -104,10 +103,14 @@ section {
     border-image: 
       linear-gradient(
         to bottom, 
-        purple, 
+        rgba(3, 89, 157, 0.9), 
         rgba(7, 7, 7, 0.3)
       ) 3 100%;
 
+}
+
+section:hover {
+    transform: scale(1.015);
 }
 
 #movies {
@@ -115,17 +118,18 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgba(128, 0, 128, 0.1);
+    background-color: rgba(31, 31, 31, 0.1);
     border-radius: 0.3rem;
     border-width: 1rem;
     border-style: solid;
     border-image: 
       linear-gradient(
         to bottom, 
-        purple, 
+        rgba(3, 89, 157, 0.9), 
         rgba(7, 7, 7, 0.3)
       ) 3 100%;
 }
+
 h3 {
     font-size: 1.1rem;
 }
